@@ -2,11 +2,12 @@ require "pry"
 
 class CashRegister
   attr_accessor :total, :discount
-  @items_array = []
+  @items_array
   
   def initialize(discount = 0)
     @total = 0
     @discount = discount
+    
   end
   
   def add_item(title, price, quantity = 1)
@@ -24,6 +25,7 @@ class CashRegister
   end
   
   def items
+    binding.pry
     @items_array
   end
 end
