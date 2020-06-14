@@ -25,7 +25,6 @@ class CashRegister
   end
   
   def items
-    binding.pry
     @items_array
   end
 end
